@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/springbootexample
+        username: root
+        password: root
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.mybatis.domain # 注意：对应实体类的路径
+
+
+
